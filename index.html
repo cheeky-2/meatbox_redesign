@@ -9,6 +9,7 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <script src="./scripts/main.js" defer></script>
 </head>
 <body>
@@ -100,89 +101,96 @@
     </header>
     <main>
         <div class="main_bn">
-            <button type="button" class="back_btn"><img src="./images/main_arrow_back_icon.png" alt="이전베너보기"></button>
-            <div class="bener">
-                <img src="./images/main_bg.png" alt="빠르고 신선하고 맛있는">
+            <div class="bener_wrap">
+                <div class="bener">
+                    <img src="./images/main_bg.png" alt="빠르고 신선하고 맛있는 고기">
+                    <img src="./images/main_bn_tablet.png" alt="작동테스트이미지">
+                </div>
             </div>
-            <button type="button" class="next_btn"><img src="./images/main_arrow_next_icon.png" alt="다음베너보기"></button>
+            <div class="main_bn_btn">
+                <button type="button" class="back_btn"><img src="./images/main_arrow_back_icon.png" alt="이전베너보기"></button>
+                <button type="button" class="next_btn"><img src="./images/main_arrow_next_icon.png" alt="다음베너보기"></button>
+            </div>
         </div>
         <div class="category_wrap">
             <div class="category_btn_wrap">
                 <button type="button" class="category_back_btn"><img src="./images/c_arrow_back_icon.png" alt="카테고리 뒤로 넘기기"></button>
-                <ul class="category_container">
-                    <li>
-                        <a href="#">
-                            <img src="./images/cow_meat.png" alt="소고기">
-                            <em>소고기</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/pig_meat.png" alt="돼지고기">
-                            <em>돼지고기</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/chicken_meat.png" alt="닭·오리고기">
-                            <em>닭·오리고기</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/sheep_meat.png" alt="양·말고기">
-                            <em>양·말고기</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/meat_small_amount.png" alt="고기 낱개(소분) 상품">
-                            <em>고기 낱개(소분) 상품</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/cutting_meat.png" alt="세절&분쇄육">
-                            <em>세절&분쇄육</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/processed_meat.png" alt="육가공품">
-                            <em>육가공품</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/seasoning_meat.png" alt="양념육">
-                            <em>양념육</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/processed_meat_2.png" alt="가공식품">
-                            <em>가공식품</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/vegetable.png" alt="농산물">
-                            <em>농산물</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/fish.png" alt="수산물">
-                            <em>수산물</em>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./images/kitchen_utensils.png" alt="포장•배달•주방 용품">
-                            <em>포장·배달·주방 용품</em>
-                        </a>
-                    </li>
-                </ul>
+                <div class="category_view">
+                    <ul class="category_container">
+                        <li>
+                            <a href="#">
+                                <img src="./images/cow_meat.png" alt="소고기">
+                                <em>소고기</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/pig_meat.png" alt="돼지고기">
+                                <em>돼지고기</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/chicken_meat.png" alt="닭·오리고기">
+                                <em>닭·오리고기</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/sheep_meat.png" alt="양·말고기">
+                                <em>양·말고기</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/meat_small_amount.png" alt="고기 낱개(소분) 상품">
+                                <em>고기 낱개(소분) 상품</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/cutting_meat.png" alt="세절&분쇄육">
+                                <em>세절&분쇄육</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/processed_meat.png" alt="육가공품">
+                                <em>육가공품</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/seasoning_meat.png" alt="양념육">
+                                <em>양념육</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/processed_meat_2.png" alt="가공식품">
+                                <em>가공식품</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/vegetable.png" alt="농산물">
+                                <em>농산물</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/fish.png" alt="수산물">
+                                <em>수산물</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/kitchen_utensils.png" alt="포장•배달•주방 용품">
+                                <em>포장·배달·주방 용품</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <button type="button" class="category_next_btn"><img src="./images/c_arrow_next_icon.png" alt="카테고리 앞으로 넘기기"></button>
             </div>
             <div class="bar_wrap">
@@ -322,62 +330,64 @@
                         <a href="">더보기<img src="./images/more.png" alt=""></a>
                     </div>
                     <div class="user_best_product_contents">
-                        <ul class="user_best_product_list">
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        <img src="./images/lamb_skewers.png" alt="">
-                                    </p>
-                                    <div class="product_state_container">
-                                        <div class="product_state">
-                                            <img src="./images/ice_icon.png" alt="">
-                                            <span>냉동</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>수입양</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>세절&분쇄</span>
+                        <div class="user_best_product_list_container">
+                            <ul class="user_best_product_list">
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="./images/lamb_skewers.png" alt="">
+                                        </p>
+                                        <div class="product_state_container">
+                                            <div class="product_state">
+                                                <img src="./images/ice_icon.png" alt="">
+                                                <span>냉동</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>수입양</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>세절&분쇄</span>
+                                            </div>
+                                            <div class="product_review">
+                                                <img src="./images/review_icon.png" alt="">
+                                                <span>4.7</span>
+                                            </div>
                                         </div>
-                                        <div class="product_review">
-                                            <img src="./images/review_icon.png" alt="">
-                                            <span>4.7</span>
+                                        <p>[큐브] 꼬치 - 호주 | 텐더9</p>
+                                        <div class="product_price">
+                                            <em>23000원</em>
+                                            <span>(100g당) 2,300원 / 총 1,000g</span>
                                         </div>
-                                    </div>
-                                    <p>[큐브] 꼬치 - 호주 | 텐더9</p>
-                                    <div class="product_price">
-                                        <em>23000원</em>
-                                        <span>(100g당) 2,300원 / 총 1,000g</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        <img src="./images/rammahawk.png" alt="">
-                                    </p>
-                                    <div class="product_state_container">
-                                        <div class="product_state">
-                                            <img src="./images/ice_icon.png" alt="">
-                                            <span>냉동</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>수입양</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>선물세트</span>
+                                    </a>
+                                    <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="./images/rammahawk.png" alt="">
+                                        </p>
+                                        <div class="product_state_container">
+                                            <div class="product_state">
+                                                <img src="./images/ice_icon.png" alt="">
+                                                <span>냉동</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>수입양</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>선물세트</span>
+                                            </div>
+                                            <div class="product_review">
+                                                <img src="./images/review_icon.png" alt="">
+                                                <span>4.8</span>
+                                            </div>
                                         </div>
-                                        <div class="product_review">
-                                            <img src="./images/review_icon.png" alt="">
-                                            <span>4.8</span>
+                                        <p>[선물세트] 램마호크</p>
+                                        <div class="product_price">
+                                            <em>32000원</em>
+                                            <span>(100g당) 3200원 / 총 1000g</span>
                                         </div>
-                                    </div>
-                                    <p>[선물세트] 램마호크</p>
-                                    <div class="product_price">
-                                        <em>32000원</em>
-                                        <span>(100g당) 3200원 / 총 1000g</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
-                            </li>
-                        </ul>
+                                    </a>
+                                    <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="product_slide_nav">
                             <button type="button"><img src="./images/product_arrow_back_icon.png" alt=""></button>
                             <button type="button"><img src="./images/radio_button_checked.png" alt=""></button>
@@ -397,62 +407,64 @@
                         <a href="">더보기<img src="./images/more.png" alt=""></a>
                     </div>
                     <div class="user_best_product_contents">
-                        <ul class="user_best_product_list">
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        <img src="./images/porkbelly.png" alt="">
-                                    </p>
-                                    <div class="product_state_container">
-                                        <div class="product_state">
-                                            <img src="./images/ice_icon.png" alt="">
-                                            <span>냉동</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>수입돼지</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>세절&분쇄</span>
+                        <div class="user_best_product_list_container">
+                            <ul class="user_best_product_list">
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="./images/porkbelly.png" alt="">
+                                        </p>
+                                        <div class="product_state_container">
+                                            <div class="product_state">
+                                                <img src="./images/ice_icon.png" alt="">
+                                                <span>냉동</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>수입돼지</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>세절&분쇄</span>
+                                            </div>
+                                            <div class="product_review">
+                                                <img src="./images/review_icon.png" alt="">
+                                                <span>4.5</span>
+                                            </div>
                                         </div>
-                                        <div class="product_review">
-                                            <img src="./images/review_icon.png" alt="">
-                                            <span>4.5</span>
+                                        <p>[업소용/슬라이스] 삼겹살7mm - 칠레 | 아그로수퍼(슈퍼포크)</p>
+                                        <div class="product_price">
+                                            <em>79000원</em>
+                                            <span>(kg당) 14400원 / 총 5kg</span>
                                         </div>
-                                    </div>
-                                    <p>[업소용/슬라이스] 삼겹살7mm - 칠레 | 아그로수퍼(슈퍼포크)</p>
-                                    <div class="product_price">
-                                        <em>79000원</em>
-                                        <span>(kg당) 14400원 / 총 5kg</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        <img src="./images/flatlronsteak.png" alt="">
-                                    </p>
-                                    <div class="product_state_container">
-                                        <div class="product_state">
-                                            <img src="./images/ice_icon.png" alt="">
-                                            <span>냉동</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>수입소</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>세절&분쇄</span>
+                                    </a>
+                                    <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="./images/flatlronsteak.png" alt="">
+                                        </p>
+                                        <div class="product_state_container">
+                                            <div class="product_state">
+                                                <img src="./images/ice_icon.png" alt="">
+                                                <span>냉동</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>수입소</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>세절&분쇄</span>
+                                            </div>
+                                            <div class="product_review">
+                                                <img src="./images/review_icon.png" alt="">
+                                                <span>4.6</span>
+                                            </div>
                                         </div>
-                                        <div class="product_review">
-                                            <img src="./images/review_icon.png" alt="">
-                                            <span>4.6</span>
+                                        <p>[소량/슬라이스]부채살12mm - 미국 | 엑셀 - 초이스</p>
+                                        <div class="product_price">
+                                            <em>69230원</em>
+                                            <span>(kg당) 19,780원 / 총 3.5kg</span>
                                         </div>
-                                    </div>
-                                    <p>[소량/슬라이스]부채살12mm - 미국 | 엑셀 - 초이스</p>
-                                    <div class="product_price">
-                                        <em>69230원</em>
-                                        <span>(kg당) 19,780원 / 총 3.5kg</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
-                            </li>
-                        </ul>
+                                    </a>
+                                    <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="product_slide_nav">
                             <button type="button"><img src="./images/product_arrow_back_icon.png" alt=""></button>
                             <button type="button"><img src="./images/radio_button_checked.png" alt=""></button>
@@ -472,68 +484,71 @@
                         <a href="">더보기<img src="./images/more.png" alt=""></a>
                     </div>
                     <div class="user_best_product_contents">
-                        <ul class="user_best_product_list">
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        <img src="./images/makchang.png" alt="">
-                                    </p>
-                                    <div class="product_state_container">
-                                        <div class="product_state">
-                                            <img src="./images/ice_icon.png" alt="">
-                                            <span>냉동</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>양념육</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>양념</span>
+                        <div class="user_best_product_list_container">
+
+                            <ul class="user_best_product_list">
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="./images/makchang.png" alt="">
+                                        </p>
+                                        <div class="product_state_container">
+                                            <div class="product_state">
+                                                <img src="./images/ice_icon.png" alt="">
+                                                <span>냉동</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>양념육</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>양념</span>
+                                            </div>
+                                            <div class="product_review">
+                                                <img src="./images/review_icon.png" alt="">
+                                                <span>4.4</span>
+                                            </div>
                                         </div>
-                                        <div class="product_review">
-                                            <img src="./images/review_icon.png" alt="">
-                                            <span>4.4</span>
+                                        <p>이바라 진眞 삶은막창 1KG (1.12KG*1EA)</p>
+                                        <div class="product_price_contents">
+                                            <div class="product_price">
+                                                <span>box당</span>
+                                                <em>29800원</em>
+                                            </div>
+                                            <p>(100g당) 2661원 / 총 1120g</p>
                                         </div>
-                                    </div>
-                                    <p>이바라 진眞 삶은막창 1KG (1.12KG*1EA)</p>
-                                    <div class="product_price_contents">
-                                        <div class="product_price">
-                                            <span>box당</span>
-                                            <em>29800원</em>
+                                    </a>
+                                    <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>
+                                            <img src="./images/gizzard.png" alt="">
+                                        </p>
+                                        <div class="product_state_container">
+                                            <div class="product_state">
+                                                <img src="./images/ice_icon.png" alt="">
+                                                <span>냉동</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>양념육</span>
+                                                <img src="./images/Line.png" alt="">
+                                                <span>양념</span>
+                                            </div>
+                                            <div class="product_review">
+                                                <img src="./images/review_icon.png" alt="">
+                                                <span>3.9</span>
+                                            </div>
                                         </div>
-                                        <p>(100g당) 2661원 / 총 1120g</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <p>
-                                        <img src="./images/gizzard.png" alt="">
-                                    </p>
-                                    <div class="product_state_container">
-                                        <div class="product_state">
-                                            <img src="./images/ice_icon.png" alt="">
-                                            <span>냉동</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>양념육</span>
-                                            <img src="./images/Line.png" alt="">
-                                            <span>양념</span>
+                                        <p>(수월한) 양념근위 1.75KG (350g * 5Ea)</p>
+                                        <div class="product_price_contents">
+                                            <div class="product_price">
+                                                <span>box당</span>
+                                                <em>28500원</em>
+                                            </div>
+                                            <p>(100g당) 1,629원 / 총 1,750g</p>
                                         </div>
-                                        <div class="product_review">
-                                            <img src="./images/review_icon.png" alt="">
-                                            <span>3.9</span>
-                                        </div>
-                                    </div>
-                                    <p>(수월한) 양념근위 1.75KG (350g * 5Ea)</p>
-                                    <div class="product_price_contents">
-                                        <div class="product_price">
-                                            <span>box당</span>
-                                            <em>28500원</em>
-                                        </div>
-                                        <p>(100g당) 1,629원 / 총 1,750g</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
-                            </li>
-                        </ul>
+                                    </a>
+                                    <a href="#" class="shopping_cart"><img src="./images/shopping_cart.png" alt="장바구니에 담기"></a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="product_slide_nav">
                             <button type="button"><img src="./images/product_arrow_back_icon.png" alt=""></button>
                             <button type="button"><img src="./images/radio_button_checked.png" alt=""></button>
@@ -836,15 +851,17 @@
         </section>
     </main>
     <footer>
-        <div class="footer_top">
-            <a href="#">회사소개</a>
-            <a href="#">투자정보</a>
-            <a href="#">입점제휴문의</a>
-            <a href="#">모바일</a>
-            <a href="#">이메일 무단수집거부</a>
-            <a href="#">이용약관</a>
-            <a href="#">유료서비스 이용약관</a>
-            <a href="#">개인정보 처리방침</a>
+        <div class="footer_top_wrap">
+            <div class="footer_top">
+                <a href="#">회사소개</a>
+                <a href="#">투자정보</a>
+                <a href="#">입점제휴문의</a>
+                <a href="#">모바일</a>
+                <a href="#">이메일 무단수집거부</a>
+                <a href="#">이용약관</a>
+                <a href="#">유료서비스 이용약관</a>
+                <a href="#">개인정보 처리방침</a>
+            </div>
         </div>
         <div class="footer_wrap">
             <div class="footer_middle">

@@ -1,0 +1,11 @@
+@media screen and (max-width:1280px) {
+    header {padding:0 80px; width:100%;}
+    main .main_bn .bener img {}
+    main .main_bn .bener_wrap .bener img:nth-child(1) {display:none;}
+    main .main_bn .bener_wrap .bener img:nth-child(2) {display:block;}
+    main .main_bn .main_bn_btn {display:none;}
+    main .category_wrap .category_btn_wrap {margin:30px 80px 20px; width:100%;}
+    main .category_wrap .category_btn_wrap .category_container li {margin-right:48px;}
+    main .category_wrap .category_btn_wrap .category_container li a img {width:120px;}
+}
+@media screen and (max-width:402px) {}
