@@ -1,8 +1,11 @@
 @media screen and (max-width:1280px) {
+    .popup .popup_contents > em {font-size:0.75rem;}
+    .popup .popup_contents > a {font-size:0.625rem;}
+    .popup > button img {width:16px;}
     header {padding:0 80px; width:100%;}
     main .main_bn .bener img {}
     main .main_bn .bener_wrap .bener img:nth-child(1) {display:none;}
-    main .main_bn .bener_wrap .bener img:nth-child(2) {display:block;}
+    main .main_bn .bener_wrap .bener img:nth-child(2) {display:inline-block;}
     main .main_bn .main_bn_btn {display:none;}
     main .category_wrap .category_btn_wrap {padding:0 80px; width:100%;}
     main .category_wrap .category_btn_wrap .category_back_btn {margin-right:0;}
@@ -39,6 +42,67 @@
     main .meatbox_more_wrap .product_more_container > li {margin-right:calc(((1120px - 10px) - (210px * 5)) / 4); border:1px solid #bbb; position:relative; margin-bottom:40px;}
     main .meatbox_more_wrap .product_more_container > li > a > p img {width:210px; height:210px;}
     main .meatbox_more_wrap .product_more_container > li > a > .product_description .product_state_container > p {font-weight:600; width:210px; padding:0 12px;}
-
+    main .meatbox_more_wrap .product_more_container > li > .shopping_cart {top:177px; right:3px;}
+    footer .footer_top_wrap .footer_top {justify-content:center;}
+    footer .footer_top_wrap .footer_top > a {margin-right:50px;}
+    footer .footer_wrap {width:1120px; margin:10px auto 0; padding:20px 0 0;}
+    footer .footer_wrap .footer_middle {padding-bottom:20px;}
+    footer .footer_wrap .footer_middle .footer_container > p > img {width:130px;}
+    footer .footer_wrap .footer_middle .footer_container .footer_contents > p {font-size:0.688rem; font-weight:600;}
+    footer .footer_wrap .footer_middle .footer_container .footer_contents > .footer_content {font-size:0.688rem;}
+    footer .footer_wrap .footer_middle .footer_container .footer_contents > .user_problem .money_credit {font-size:0.688rem;}
+    footer .footer_wrap .footer_middle .footer_container .footer_contents > .user_problem .user_complain {font-size:0.688rem;}
+    footer .footer_wrap .footer_middle .footer_right_container .sns > a > img {width:36px;}
+    footer .footer_wrap .footer_middle .footer_right_container .certified > .certified_img img:nth-child(1) {width:90px; margin-right:20px;}
+    footer .footer_wrap .footer_middle .footer_right_container .certified > .certified_img img:nth-child(2) {height:90px;}
+    footer .footer_wrap .footer_middle .footer_right_container .certified > .isms_msg > p {font-size:0.688rem;}
+    footer .footer_wrap .precautions {font-size:0.688rem; padding:15px 0; margin:0;}
 }
-@media screen and (max-width:402px) {}
+@media screen and (max-width:402px) {
+    .popup {padding:12px 20px;}
+    .popup .popup_contents > em {font-size:0.625rem;}
+    .popup .popup_contents > a {font-size:0.5rem;}
+    header {width:100%; padding:0; margin-top:5px; display:flex; align-items:center;justify-content:space-between; padding:0 10px;}
+    header .header_top {width:max-content;}
+    header .header_top > h1 {height:40px;}
+    header .header_top > h1 a {width:40px; height:40px; overflow:hidden; display:inline-block;}
+    header .header_top > h1 a img {position:relative;bottom:3px;}
+    header .header_top .header_top_right {display:none;}
+    header .header_bottom * {display:none;}
+    header .header_bottom .search {display:flex; width:203px; height:30px;}
+    header .header_bottom .search * {display:inline-block;}
+    header .header_bottom .search input::placeholder {display:none;}
+    header .m_icon {display:flex; align-items:center;}
+    header .m_icon a img {margin-right:10px;}
+    main .main_bn .bener_wrap .bener img:nth-child(2) {display:none;}
+    main .main_bn .bener_wrap .bener img:nth-child(3) {display:inline-block;}
+    main .category_wrap {margin-bottom:40px;}
+    main .category_wrap .bar_wrap {display:none;}
+    main .category_wrap .category_btn_wrap {width:402px; padding:0; margin-bottom:0;}
+    main .category_wrap .category_btn_wrap button {display:none;}
+    main .category_wrap .category_btn_wrap .category_view {margin-bottom:0;}
+    main .category_wrap .category_btn_wrap .category_view .category_container {flex-flow:row wrap; justify-content:flex-start;}
+    main .category_wrap .category_btn_wrap .category_view .category_container li {margin-right:16px; width:50px; margin-bottom:30px;}
+    main .category_wrap .category_btn_wrap .category_view .category_container li:nth-child(6n) {margin-right:0;}
+    main .category_wrap .category_btn_wrap .category_view .category_container li:nth-child(6)~li {margin-bottom:0;}
+    main .category_wrap .category_btn_wrap .category_view .category_container li a img {width:50px;}
+    main .category_wrap .category_btn_wrap .category_view .category_container li a em {font-size:0.625rem; text-align:center;}
+    main .best_product {width:402px; margin: 0 auto;}
+    main .best_product > * {width:100%; margin: 0 auto;}
+    main .best_product h2 {font-size:1.25rem; text-align:center;}
+    main .best_product .best_product_bg {height:157px;}
+    main .best_product .best_product_bg img {display:none;}
+    main .best_product .best_product_bg .best_product_title {top:115px; display:flex; padding:0 4px;}
+    main .best_product .best_product_bg .best_product_title button {font-size:0.625rem; padding:8px 10px; margin-right:20px;}
+    main .best_product > p {margin:10px 0; padding-right:26px;}
+    main .best_product > p > a {font-size:0.625rem;}
+    main .best_product .best_product_list > li {margin-right:26px;}
+    main .best_product .best_product_list > li .shopping_cart {display:none;}
+    main .best_product .best_product_list > li > a > p:nth-of-type(1) img {width:160px;}
+    main .best_product .best_product_list {width:350px; overflow:hidden;}
+    main .best_product .best_product_list > li > a > p:nth-of-type(2) {font-size:0.875rem; margin-bottom:30px;;}
+    main .best_product .best_product_list > li > a .product_state {padding:14px 12px 6px; display:flex; align-items:center;}
+    main .best_product .best_product_list > li > a .product_price {padding:0 12px; margin-bottom:14px;}
+    main .best_product .best_product_list > li > a .product_sub_information {margin:0 12px 0;}
+    main .user_best_product { width:402px; margin:80px auto 0;}
+}
