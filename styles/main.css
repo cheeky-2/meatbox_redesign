@@ -128,10 +128,11 @@ main .user_best_product > .user_best_product_container > .user_best_product_cont
 main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container {height:100%;}
 main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list {display:flex;}
 main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li {border:1px solid #bbb; margin-right:12px; position:relative; width:max-content;}
-main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li:last-child {margin-right:0;}
+main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li:nth-child(2) {margin-right:0;}
+main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li:last-child {display:none;}
 main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li > a {width:250px; display:block;}
 main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li > a > p {height:250px;}
-main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li > a > p img{}
+main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li > a > p img {}
 main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li > a > .product_content .product_state_container {}
 main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li > a .product_content {display:flex; flex-flow:column nowrap; justify-content:space-between;height:180px;}
 main .user_best_product > .user_best_product_container > .user_best_product_contents_wrap .user_best_product_contents .user_best_product_list_container .user_best_product_list li > a .product_content .product_state_container .product_state_contents {}
@@ -188,6 +189,9 @@ main .meatbox_more_wrap .product_more_container > li > a > .product_description 
 main .meatbox_more_wrap .product_more_container > li > .shopping_cart {position:absolute; top:184px; right:6px; background-color:#fff; width:30px; height:30px; border-radius:5px;}
 main .meatbox_more_wrap .product_more_container > li > .shopping_cart img {}
 footer {}
+footer > p {display:none;}
+footer > p img {}
+footer .footer_big_wrap {}
 footer .footer_top_wrap { border-top:1px solid #bbb; border-bottom:1px solid #bbb;}
 footer .footer_top_wrap .footer_top {padding:12px 0; width:1280px; margin:0 auto; display:flex; justify-content:space-between;}
 footer .footer_top_wrap .footer_top > a {font-size:0.875rem;}
