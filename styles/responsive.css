@@ -4,12 +4,18 @@
     .popup > button img {width:16px;}
     header {padding:0 80px; width:100%;}
     main .main_bn .bener img {}
-    main .main_bn .bener_wrap .bener img:nth-child(1) {display:none;}
-    main .main_bn .bener_wrap .bener img:nth-child(2) {display:inline-block;}
+    main .main_bn .bener_wrap .bener {}
+    /* main .main_bn .bener_wrap .bener .d_main_bn {display:none;}
+    main .main_bn .bener_wrap .bener .t_main_bn {display:block;}
+    main .main_bn .bener_wrap .bener .t_main_bn {display:flex; width:100%; }
+    main .main_bn .bener_wrap .bener .t_main_bn img {width:100%;}
+    main .main_bn .bener_wrap .bener .m_main_bn {display:none;} */
     main .main_bn .main_bn_btn {display:none;}
+    main .main_bn > button {display:none;}
     main .category_wrap .category_btn_wrap {padding:0 80px; width:100%;}
-    main .category_wrap .category_btn_wrap .category_back_btn {margin-right:48px;}
-    main .category_wrap .category_btn_wrap .category_view {margin-bottom:20px; width:100%;}
+    main .category_wrap .category_btn_wrap .category_back_btn {margin-right:0px; left:80px;}
+    main .category_wrap .category_btn_wrap .category_next_btn {right:80px;}
+    main .category_wrap .category_btn_wrap .category_view {margin-bottom:20px; width:960px; margin:0 auto;}
     main .category_wrap .category_btn_wrap .category_view .category_container {justify-content:space-between; width:100%;}
     main .category_wrap .category_btn_wrap .category_view .category_container li {margin-right:48px;}
     main .category_wrap .category_btn_wrap .category_view .category_container li:last-child {margin-right:0;}
@@ -75,18 +81,31 @@
     header .header_bottom * {display:none;}
     header .header_bottom .search {display:flex; width:203px; height:30px;}
     header .header_bottom .search * {display:inline-block;}
-    header .header_bottom .search input::placeholder {display:none;}
+    header .header_bottom .search .search_btn {height:18px;}
+    header .header_bottom .search .search_btn img {width:18px;}
+    header .header_bottom .search input {padding-left:10px;}
+    header .header_bottom .search input::placeholder {opacity:0;}
     header .m_icon {display:flex; align-items:center;}
-    header .m_icon a img {margin-right:10px;}
-    main .main_bn .bener_wrap .bener {}
-    main .main_bn .bener_wrap .bener img:nth-child(2) {display:none;}
-    main .main_bn .bener_wrap .bener img:nth-child(3) {display:inline-block;}
+    header .m_icon a {margin-right:10px; height:18px}
+    header .m_icon a img {width:18px;}
+    header .m_icon .m_all_menu {height:18px;}
+    header .m_icon .m_all_menu button {height:18px;}
+    header .m_icon .m_all_menu button img {width:18px;}
+    header .m_icon .m_all_menu {position:relative;}
+    header .m_icon .m_all_menu .lnb1 {display:flex; flex-flow:column nowrap; position:absolute; top:27px; right:-10px; z-index:800; width:max-content; background-color:#fff; padding:15px;}
+    header .m_icon .m_all_menu .lnb1 a {margin-bottom:15px; font-size:0.875rem;}
+    header .m_icon .m_all_menu .lnb1 a:last-child {margin-bottom:0;}
+    main .main_bn .bener_wrap .bener {height:350px; width:100%;}
+    /* main .main_bn .bener_wrap .bener .d_main_bn {display:none;}
+    main .main_bn .bener_wrap .bener .t_main_bn {display:none;}
+    main .main_bn .bener_wrap .bener .m_main_bn {display:flex;}
+    main .main_bn .bener_wrap .bener .m_main_bn img {width:100%;} */
     main .category_wrap {margin-bottom:40px;}
     main .category_wrap .bar_wrap {display:none;}
     main .category_wrap .category_btn_wrap {width:402px; padding:0; margin-bottom:0;}
     main .category_wrap .category_btn_wrap button {display:none;}
     main .category_wrap .category_btn_wrap .category_view {margin-bottom:0;}
-    main .category_wrap .category_btn_wrap .category_view .category_container {flex-flow:row wrap; justify-content:flex-start;}
+    main .category_wrap .category_btn_wrap .category_view .category_container {flex-flow:row wrap; justify-content:center;}
     main .category_wrap .category_btn_wrap .category_view .category_container li {margin-right:16px; width:50px; margin-bottom:30px;}
     main .category_wrap .category_btn_wrap .category_view .category_container li:nth-child(6n) {margin-right:0;}
     main .category_wrap .category_btn_wrap .category_view .category_container li:nth-child(6)~li {margin-bottom:0;}

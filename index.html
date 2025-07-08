@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="popup">
@@ -61,7 +65,11 @@
                             <a href="#">포장·배달·주방용품</a>
                         </div>
                     </li>
-                    <li><a href="#"><em>당당시리즈</em><img src="./images/arrow_down.png" alt="당당시리즈 더보기"></a>
+                    <li>
+                        <a href="#">
+                            <em>당당시리즈</em>
+                            <img src="./images/arrow_down.png" alt="당당시리즈 더보기">
+                        </a>
                         <div class="lnb2">
                             <a href="#">
                                 <img src="./images/cow_dangdang.png" alt="당당한우">
@@ -95,101 +103,131 @@
             </nav>
             <div class="search">
                 <input type="text" placeholder="소분 상품으로 부담은 줄이고 무료배송까지!">
-                <button type="button" class="search_btn"><img src="./images/search.png" alt="검색하기"></button>
+                <button type="button" class="search_btn">
+                    <img src="./images/search.png" alt="검색하기">
+                </button>
             </div>
         </div>
         <div class="m_icon">
             <a href="#"><img src="./images/m_species.png" alt="알림"></a>
             <a href="#"><img src="./images/m_user_icon.png" alt="마이페이지"></a>
-            <button type="button"><img src="./images/m_all_menu.png" alt="전체메뉴"></button>
+            <div class="m_all_menu">
+                <button type="button">
+                    <img src="./images/m_all_menu.png" alt="전체메뉴">
+                </button>
+                <div class="lnb1">
+                    <a href="#">소고기</a>
+                    <a href="#">돼지고기</a>
+                    <a href="#">닭·오리고기</a>
+                    <a href="#">양·말고기</a>
+                    <a href="#">고기 낱개(소분) 상품</a>
+                    <a href="#">세절&분쇄육</a>
+                    <a href="#">육가공품</a>
+                    <a href="#">양념육</a>
+                    <a href="#">가공식품</a>
+                    <a href="#">농산물</a>
+                    <a href="#">수산물</a>
+                    <a href="#">포장·배달·주방용품</a>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <div class="main_bn">
             <div class="bener_wrap">
-                <div class="bener">
-                    <img src="./images/main_bg.png" alt="빠르고 신선하고 맛있는 고기">
-                    <img src="./images/main_bn_tablet.png" alt="빠르고 신선하고 맛있는 고기">
-                    <img src="./images/main_bn_mobile.png" alt="빠르고 신선하고 맛있는 고기">
+                <div class="bener swiper-container">
+                    <div class="d_main_bn swiper-wrapper">
+                        <div class="swiper-slide slide1"></div>
+                        <div class="swiper-slide slide2"></div>
+                        <div class="swiper-slide slide3"></div>
+                    </div>
+                    <!-- <div class="t_main_bn swiper-wrapper">
+                        <img src="./images/main_bn_tablet.png" alt="빠르고 신선하고 맛있는 고기" class="swiper-slide slide1">
+                        <img src="./images/main_bn_tablet.png" alt="빠르고 신선하고 맛있는 고기" class="swiper-slide slide2">
+                        <img src="./images/main_bn_tablet.png" alt="빠르고 신선하고 맛있는 고기" class="swiper-slide slide3">
+                    </div>
+                    <div class="m_main_bn swiper-wrapper">
+                        <img src="./images/main_bn_mobile.png" alt="빠르고 신선하고 맛있는 고기" class="swiper-slide slide1">
+                        <img src="./images/main_bn_mobile.png" alt="빠르고 신선하고 맛있는 고기" class="swiper-slide slide2">
+                        <img src="./images/main_bn_mobile.png" alt="빠르고 신선하고 맛있는 고기" class="swiper-slide slide3">
+                    </div> -->
                 </div>
             </div>
-            <div class="main_bn_btn">
-                <button type="button" class="back_btn"><img src="./images/main_arrow_back_icon.png" alt="이전베너보기"></button>
-                <button type="button" class="next_btn"><img src="./images/main_arrow_next_icon.png" alt="다음베너보기"></button>
-            </div>
+            <button type="button" class="back_btn swiper-button-prev"><img src="./images/main_arrow_back_icon.png" alt="이전베너보기"></button>
+            <button type="button" class="next_btn swiper-button-next"><img src="./images/main_arrow_next_icon.png" alt="다음베너보기"></button>
         </div>
         <div class="category_wrap">
             <div class="category_btn_wrap">
-                <button type="button" class="category_back_btn"><img src="./images/c_arrow_back_icon.png" alt="카테고리 뒤로 넘기기"></button>
-                <div class="category_view">
-                    <ul class="category_container">
-                        <li>
+                <button type="button" class="category_back_btn swiper-button-prev"><img src="./images/c_arrow_back_icon.png" alt="카테고리 뒤로 넘기기"></button>
+                <div class="category_view swiper-container">
+                    <ul class="category_container swiper-wrapper">
+                        <li class="swiper-slide slide1">
                             <a href="#">
                                 <img src="./images/cow_meat.png" alt="소고기">
                                 <em>소고기</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide2">
                             <a href="#">
                                 <img src="./images/pig_meat.png" alt="돼지고기">
                                 <em>돼지고기</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide3">
                             <a href="#">
                                 <img src="./images/chicken_meat.png" alt="닭·오리고기">
                                 <em>닭·오리고기</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide4">
                             <a href="#">
                                 <img src="./images/sheep_meat.png" alt="양·말고기">
                                 <em>양·말고기</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide5">
                             <a href="#">
                                 <img src="./images/meat_small_amount.png" alt="고기 낱개(소분) 상품">
                                 <em>고기 낱개(소분) 상품</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide6">
                             <a href="#">
                                 <img src="./images/cutting_meat.png" alt="세절&분쇄육">
                                 <em>세절&분쇄육</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide7">
                             <a href="#">
                                 <img src="./images/processed_meat.png" alt="육가공품">
                                 <em>육가공품</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide8">
                             <a href="#">
                                 <img src="./images/seasoning_meat.png" alt="양념육">
                                 <em>양념육</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide9">
                             <a href="#">
                                 <img src="./images/processed_meat_2.png" alt="가공식품">
                                 <em>가공식품</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide10">
                             <a href="#">
                                 <img src="./images/vegetable.png" alt="농산물">
                                 <em>농산물</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide11">
                             <a href="#">
                                 <img src="./images/fish.png" alt="수산물">
                                 <em>수산물</em>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide slide12">
                             <a href="#">
                                 <img src="./images/kitchen_utensils.png" alt="포장•배달•주방 용품">
                                 <em>포장·배달·주방 용품</em>
@@ -197,7 +235,7 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="category_next_btn"><img src="./images/c_arrow_next_icon.png" alt="카테고리 앞으로 넘기기"></button>
+                <button type="button" class="category_next_btn swiper-button-next"><img src="./images/c_arrow_next_icon.png" alt="카테고리 앞으로 넘기기"></button>
             </div>
             <div class="bar_wrap">
                 <button type="button" class="left_bar"><img src="./images/radio_button_checked.png" alt="1페이지"></button>
