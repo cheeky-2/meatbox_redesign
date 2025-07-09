@@ -15,7 +15,8 @@ header .header_top .header_top_right nav {padding:10px 0; width:max-content;}
 header .header_top .header_top_right nav > a {font-size:0.75rem;}
 header .header_top .header_top_right nav > img {margin:0 10px;}
 header .header_top .header_top_right .header_top_user_pype {padding:10px 0; float:right; font-size:0.938rem;}
-header .header_top .header_top_right .header_top_user_pype .business_user {}
+header .header_top .header_top_right .header_top_user_pype .business_user {font-weight:600;}
+header .header_top .header_top_right .header_top_user_pype .individual_user {}
 header .header_top .header_top_right .header_top_user_pype > img {margin:0 7px;}
 header .header_top .header_top_right .header_top_user_pype .individual_user {}
 header .header_bottom {display:flex; flex-flow:row nowrap; justify-content:space-between; margin-top:5px;}
@@ -90,6 +91,7 @@ main .best_product .best_product_bg {background:url(../images/bestproduct_bg.png
 main .best_product .best_product_bg img {}
 main .best_product .best_product_bg .best_product_title {position:relative; bottom:20px;}
 main .best_product .best_product_bg .best_product_title button {padding:10px 15px; background-color:#fff; border-radius:10px; font-weight:600; margin-right:25px;}
+main .best_product .best_product_bg .best_product_title button:first-child {background-color:#DC2525; color:#fff;}
 main .best_product .best_product_bg .best_product_title button:last-child {margin-right:0;}
 main .best_product > p {text-align:right;  padding-top:18px;}
 main .best_product > p > a {font-size:0.75rem; font-weight:500;}

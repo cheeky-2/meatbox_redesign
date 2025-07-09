@@ -11,8 +11,9 @@ const DmainBn = document.querySelector('.d_main_bn');
 const bnNextBtn = document.querySelector('.main_bn_btn .next_btn');
 const bnBackBtn = document.querySelector('.main_bn_btn .back_btn');
 const categoryLi = document.querySelectorAll('.category_container li')
-const body = document.querySelector('body');
-let num = 100;
+const businessUser = document.querySelector('.business_user')
+const individualUser = document.querySelector('.individual_user')
+const bestProductTheme = document.querySelectorAll('.best_product_title button')
 lnb1.style.display = 'none';
 lnb2.style.display = 'none';
 mLnb1.style.display = 'none';
@@ -36,15 +37,6 @@ mAllMenu.addEventListener('click',()=>{
 popupCloseBtn.addEventListener('click',()=>{
     popup.style.display = 'none';
 })
-/* bnNextBtn.addEventListener('click',()=>{
-    if(num < 300){
-        DmainBn.style.transform = `translateX(-${num}%)`;
-        num += 100;
-        console.log(num,DmainBn);
-    }
-}) */
-/* const mainBn = document.querySelectorAll('.swiper-container') */
-
 const MainBn = new Swiper('.bener_wrap .swiper-container',{
     autoplay:{delay:4000},
     loop:true,
@@ -69,19 +61,22 @@ const category = new Swiper('.category_wrap .swiper-container',{
         prevEl:'.category_btn_wrap .swiper-button-prev',
     },
 })
-/* if(body.style.width='772px' > body.style.width ){
-    const categoryContainer = document.querySelector('.category_container');
-    const categoryView = document.querySelector('.category_view');
-    for(const i of categoryLi){
-        i.classList.remove('swiper-slide','slide1','slide2','slide3','slide4','slide5','slide6','slide7','slide8','slide9','slide10','slide11','slide12','swiper-slide-active','swiper-slide-next');
-        i.style.width='50px';
-        
-    }
-    for(let i=0; i<12; i++){
-        categoryLi[i].classList.remove(`slide${i}`);
-        console.log(categoryLi[i])
-    }
-    categoryContainer.classList.remove('swiper-wrapper');
-    categoryContainer.removeAttribute('id');;
-    categoryView.classList.remove('swiper-container','swiper-initialized','swiper-horizontal','swiper-backface-hidden');
-} */
+businessUser.addEventListener('click',()=>{
+    individualUser.style.fontWeight = '400';
+    businessUser.style.fontWeight = '600';
+})
+individualUser.addEventListener('click',()=>{
+    individualUser.style.fontWeight = '600';
+    businessUser.style.fontWeight = '400';
+})
+/* 클릭하면 클릭한 대상은 배경이 빨개지고 글자가 하얘진다 클릭 안한 대상은 배경이 하얘지고 글자가 까매진다 */
+for(let i = 0; i < 6; i++){
+    bestProductTheme[i].addEventListener('click',()=>{
+        if(bestProductTheme[i].style.backgroundColor = '#fff'){
+            bestProductTheme[i].style.backgroundColor = '#DC2525';
+            bestProductTheme[i].style.color = '#fff';
+            console.log(i)
+        }
+    })
+}
+/* const userBestProduct = new Swiper('.user_best_product_contents .swiper-container') */
