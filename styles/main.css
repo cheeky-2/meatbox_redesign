@@ -5,8 +5,9 @@ body {min-width:320px;}
 .popup .popup_contents > a {font-size:0.75rem; color:#fff;}
 .popup > button {}
 .popup > button img {}
-header {width:1280px; margin:0 auto;}
-header .header_top {display:flex; justify-content:space-between; align-items:center;}
+.header_wrap {width:100%; position:sticky; top:-51px; background-color:#fff; z-index:999; padding-bottom:10px;}
+header {}
+header .header_top {display:flex; justify-content:space-between; align-items:center; max-width:1280px; margin:0 auto;}
 header .header_top > h1 {}
 header .header_top > h1 a {}
 header .header_top > h1 a img {width:171px;}
@@ -14,12 +15,13 @@ header .header_top .header_top_right {}
 header .header_top .header_top_right nav {padding:10px 0; width:max-content;}
 header .header_top .header_top_right nav > a {font-size:0.75rem;}
 header .header_top .header_top_right nav > img {margin:0 10px;}
-header .header_top .header_top_right .header_top_user_pype {padding:10px 0; float:right; font-size:0.938rem;}
+header .header_top .header_top_right .header_top_user_pype { float:right; font-size:0.938rem;}
 header .header_top .header_top_right .header_top_user_pype .business_user {font-weight:600;}
 header .header_top .header_top_right .header_top_user_pype .individual_user {}
 header .header_top .header_top_right .header_top_user_pype > img {margin:0 7px;}
 header .header_top .header_top_right .header_top_user_pype .individual_user {}
-header .header_bottom {display:flex; flex-flow:row nowrap; justify-content:space-between; margin-top:5px;}
+header {}
+header .header_bottom {display:flex; flex-flow:row nowrap; justify-content:space-between; margin-top:5px; max-width:1280px; margin:0 auto; padding-top:10px;}
 header .header_bottom > nav {}
 header .header_bottom > nav .gnb {display:flex; align-items:center; width:max-content;}
 header .header_bottom > nav .gnb li {margin-right:30px; position:relative;}
@@ -52,7 +54,7 @@ header .m_icon .m_all_manu button {}
 header .m_icon .m_all_menu button img {}
 header .m_icon .m_all_menu .lnb1 {display:none;}
 header .m_icon .m_all_menu .lnb1 a {}
-main {margin-top:10px;}
+main {}
 main .main_bn {width:100%; position:relative;}
 main .main_bn .bener_wrap {}
 main .main_bn .bener_wrap .bener { height:580px; width:100%;}

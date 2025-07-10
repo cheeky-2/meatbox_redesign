@@ -16,6 +16,7 @@ const individualUser = document.querySelector('.individual_user');
 const bestProductTheme = document.querySelectorAll('.best_product_title button');
 const userBestProductTitle = document.querySelectorAll('.user_best_product_wrap button');
 const topMoveNo = document.querySelectorAll('a');
+const headerTop = document.querySelector('.header_top')
 lnb1.style.display = 'none';
 lnb2.style.display = 'none';
 mLnb1.style.display = 'none';

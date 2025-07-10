@@ -75,7 +75,8 @@
     .popup {padding:12px 20px;}
     .popup .popup_contents > em {font-size:0.625rem;}
     .popup .popup_contents > a {font-size:0.5rem;}
-    header {width:100%; padding:0; margin-top:5px; display:flex; align-items:center;justify-content:space-between; padding:0 10px;}
+    .header_wrap {width:100%; position:sticky; top:0px; padding-top:5px;}
+    header {width:100%; display:flex; align-items:center;justify-content:space-between; padding:0 10px;}
     header .header_top {width:max-content;}
     header .header_top > h1 {height:40px;}
     header .header_top > h1 a {width:40px; height:40px; overflow:hidden; display:inline-block;}
@@ -98,6 +99,7 @@
     header .m_icon .m_all_menu .lnb1 {display:flex; flex-flow:column nowrap; position:absolute; top:27px; right:-10px; z-index:800; width:max-content; background-color:#fff; padding:15px;}
     header .m_icon .m_all_menu .lnb1 a {margin-bottom:15px; font-size:0.875rem;}
     header .m_icon .m_all_menu .lnb1 a:last-child {margin-bottom:0;}
+    main {}
     main .main_bn .bener_wrap .bener {height:350px; width:100%;}
     /* main .main_bn .bener_wrap .bener .d_main_bn {display:none;}
     main .main_bn .bener_wrap .bener .t_main_bn {display:none;}
