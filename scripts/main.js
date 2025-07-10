@@ -10,14 +10,15 @@ const popup = document.querySelector('.popup');
 const DmainBn = document.querySelector('.d_main_bn');
 const bnNextBtn = document.querySelector('.main_bn_btn .next_btn');
 const bnBackBtn = document.querySelector('.main_bn_btn .back_btn');
-const categoryLi = document.querySelectorAll('.category_container li')
-const businessUser = document.querySelector('.business_user')
-const individualUser = document.querySelector('.individual_user')
-const bestProductTheme = document.querySelectorAll('.best_product_title button')
+const categoryLi = document.querySelectorAll('.category_container li');
+const businessUser = document.querySelector('.business_user');
+const individualUser = document.querySelector('.individual_user');
+const bestProductTheme = document.querySelectorAll('.best_product_title button');
+const userBestProductTitle = document.querySelectorAll('.user_best_product_wrap button');
+const topMoveNo = document.querySelectorAll('a');
 lnb1.style.display = 'none';
 lnb2.style.display = 'none';
 mLnb1.style.display = 'none';
-DmainBn.style.transition = 'all 1s';
 allMenu.addEventListener('click',()=>{
     if(lnb1.style.display == 'none'){
         lnb1.style.display = 'flex';
@@ -46,7 +47,7 @@ const MainBn = new Swiper('.bener_wrap .swiper-container',{
     },
 });
 const category = new Swiper('.category_wrap .swiper-container',{
-    slidesPerView:12,//모바일
+    slidesPerView:7,//모바일
     spaceBetween:16,
     breakpoints:{
         773:{
@@ -69,14 +70,64 @@ individualUser.addEventListener('click',()=>{
     individualUser.style.fontWeight = '600';
     businessUser.style.fontWeight = '400';
 })
-/* 클릭하면 클릭한 대상은 배경이 빨개지고 글자가 하얘진다 클릭 안한 대상은 배경이 하얘지고 글자가 까매진다 */
 for(let i = 0; i < 6; i++){
+    /* bestProductTheme[i].style.backgroundColor = '#fff'
+    bestProductTheme[i].style.color = '#000'; */
     bestProductTheme[i].addEventListener('click',()=>{
+        for(let i of bestProductTheme){
+            i.style.backgroundColor = '#fff'
+            i.style.color = '#000';
+        }
         if(bestProductTheme[i].style.backgroundColor = '#fff'){
             bestProductTheme[i].style.backgroundColor = '#DC2525';
             bestProductTheme[i].style.color = '#fff';
-            console.log(i)
         }
     })
 }
-/* const userBestProduct = new Swiper('.user_best_product_contents .swiper-container') */
+const userBestProduct1 = new Swiper('.s1 .user_best_product_contents .user_best_product_list_container',{
+    pagination:{
+        el:'.user_best_product_list_container+.product_slide_nav',
+        type:'bullets',
+    },
+    navigation:{
+        nextEl:'.s1 .product_slide_nav button:last-child',
+        prevEl:'.s1 .product_slide_nav button:first-child',
+    },
+    loop:true,
+})
+const userBestProduct2 = new Swiper('.s2 .user_best_product_contents .user_best_product_list_container',{
+    pagination:{
+        el:'.user_best_product_list_container+.product_slide_nav',
+        type:'bullets',
+    },
+    navigation:{
+        nextEl:'.s2 .product_slide_nav button:last-child',
+        prevEl:'.s2 .product_slide_nav button:first-child',
+    },
+    loop:true,
+})
+const userBestProduct3 = new Swiper('.s3 .user_best_product_contents .user_best_product_list_container',{
+    pagination:{
+        el:'.user_best_product_list_container+.product_slide_nav',
+        type:'bullets',
+    },
+    navigation:{
+        nextEl:'.s3 .product_slide_nav button:last-child',
+        prevEl:'.s3 .product_slide_nav button:first-child',
+    },
+    loop:true,
+})
+for(let i = 0; i < 3; i++){
+    userBestProductTitle[i].addEventListener('click',()=>{
+        for(let i of userBestProductTitle){
+            i.style.color = '#555';
+        }
+        userBestProductTitle[i].style.color = '#000';
+        userBestProductTitle[i].style.fontWeight = '600';
+    })
+}
+for(let i of topMoveNo){
+    i.addEventListener('click',function(e){
+        e.preventDefault();
+    })
+}
