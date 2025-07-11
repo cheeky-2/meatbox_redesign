@@ -1,4 +1,4 @@
-body {min-width:320px;}
+body {min-width:320px; max-width:1920px;}
 .popup {background-color:#222; padding:12px 12px; display:flex; justify-content:space-between;}
 .popup .popup_contents {width:100%; text-align:center;}
 .popup .popup_contents > em {font-size:0.875rem; margin-right:10px; color:#fff;}
@@ -54,7 +54,7 @@ header .m_icon .m_all_manu button {}
 header .m_icon .m_all_menu button img {}
 header .m_icon .m_all_menu .lnb1 {display:none;}
 header .m_icon .m_all_menu .lnb1 a {}
-main {}
+main {max-width:1920px;}
 main .main_bn {width:100%; position:relative;}
 main .main_bn .bener_wrap {}
 main .main_bn .bener_wrap .bener { height:580px; width:100%;}
@@ -88,7 +88,7 @@ main .category_wrap .bar_wrap .left_bar img {}
 main .category_wrap .bar_wrap .right_bar {}
 main .category_wrap .bar_wrap .right_bar img {}
 main .best_product {}
-main .best_product > * {width:1280px; margin: 0 auto;}
+main .best_product > * {max-width:1280px; margin: 0 auto;}
 main .best_product h2 {font-size:1.625rem; font-weight:600; margin-bottom:35px;}
 main .best_product .best_product_bg {background:url(../images/bestproduct_bg.png) no-repeat center / cover; text-align:center; width:100%;}
 main .best_product .best_product_bg img {}
