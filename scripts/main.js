@@ -40,6 +40,7 @@ popupCloseBtn.addEventListener('click',()=>{
     popup.style.display = 'none';
 })
 const MainBn = new Swiper('.bener_wrap .swiper-container',{
+    slidesPerView:1,
     autoplay:{delay:4000},
     loop:true,
     navigation:{
@@ -86,10 +87,16 @@ for(let i = 0; i < 6; i++){
     })
 }
 const userBestProduct1 = new Swiper('.s1 .user_best_product_contents .user_best_product_list_container',{
-    pagination:{
-        el:'.user_best_product_list_container+.product_slide_nav',
-        type:'bullets',
+    slidesPerView:1,
+    breakpoints:{
+        772:{
+            slidesPerView:2,
+        },
+        1280:{
+            slidesPerView:2,
+        },
     },
+    spaceBetween:12,
     navigation:{
         nextEl:'.s1 .product_slide_nav button:last-child',
         prevEl:'.s1 .product_slide_nav button:first-child',
@@ -97,10 +104,16 @@ const userBestProduct1 = new Swiper('.s1 .user_best_product_contents .user_best_
     loop:true,
 })
 const userBestProduct2 = new Swiper('.s2 .user_best_product_contents .user_best_product_list_container',{
-    pagination:{
-        el:'.user_best_product_list_container+.product_slide_nav',
-        type:'bullets',
+    slidesPerView:1,
+    breakpoints:{
+        772:{
+            slidesPerView:2,
+        },
+        1280:{
+            slidesPerView:2,
+        },
     },
+    spaceBetween:12,
     navigation:{
         nextEl:'.s2 .product_slide_nav button:last-child',
         prevEl:'.s2 .product_slide_nav button:first-child',
@@ -108,10 +121,16 @@ const userBestProduct2 = new Swiper('.s2 .user_best_product_contents .user_best_
     loop:true,
 })
 const userBestProduct3 = new Swiper('.s3 .user_best_product_contents .user_best_product_list_container',{
-    pagination:{
-        el:'.user_best_product_list_container+.product_slide_nav',
-        type:'bullets',
+    slidesPerView:1,
+    breakpoints:{
+        772:{
+            slidesPerView:2,
+        },
+        1280:{
+            slidesPerView:2,
+        },
     },
+    spaceBetween:12,
     navigation:{
         nextEl:'.s3 .product_slide_nav button:last-child',
         prevEl:'.s3 .product_slide_nav button:first-child',
