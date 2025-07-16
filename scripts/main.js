@@ -39,7 +39,7 @@ mAllMenu.addEventListener('click',()=>{
 popupCloseBtn.addEventListener('click',()=>{
     popup.style.display = 'none';
 })
-const MainBn = new Swiper('.bener_wrap .swiper-container',{
+const MainBn = new Swiper('.bener_wrap .swiper',{
     slidesPerView:1,
     autoplay:{delay:4000},
     loop:true,
@@ -48,9 +48,35 @@ const MainBn = new Swiper('.bener_wrap .swiper-container',{
         prevEl:'.main_bn .swiper-button-prev',
     },
 });
-const category = new Swiper('.category_wrap .swiper-container',{
-    slidesPerView:7,//모바일
-    spaceBetween:16,
+let category = null;
+function cotegortSwiper(){
+    const screenWidth = window.innerWidth;
+    if(screenWidth >= 773){
+        if(!category){
+            category = new Swiper('.category_wrap .swiper',{
+                slidesPerView:6,
+                breakpoints:{
+                    1281:{
+                        slidesPerView:8,
+                    },
+                },
+                navigation:{
+                    nextEl:'.category_btn_wrap .swiper-button-next',
+                    prevEl:'.category_btn_wrap .swiper-button-prev',
+                },
+            });
+        }
+    }else{
+        if(category){
+            category.destroy(true, true);
+            category = null;
+        }
+    }
+}
+window.addEventListener('load', cotegortSwiper);
+window.addEventListener('resize', cotegortSwiper);
+/* const category = new Swiper('.category_wrap .swiper',{
+    slidesPerView:6,//모바일
     breakpoints:{
         773:{
             slidesPerView:6,
@@ -63,7 +89,7 @@ const category = new Swiper('.category_wrap .swiper-container',{
         nextEl:'.category_btn_wrap .swiper-button-next',
         prevEl:'.category_btn_wrap .swiper-button-prev',
     },
-})
+}) */
 businessUser.addEventListener('click',()=>{
     individualUser.style.fontWeight = '400';
     businessUser.style.fontWeight = '600';
