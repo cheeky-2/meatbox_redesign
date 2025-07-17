@@ -1,0 +1,29 @@
+main {}
+main h1 {}
+main form {}
+main form .write {}
+main form .write #user_id {}
+main form .write #user_pw {}
+main form .login_checkbox {}
+main form .login_checkbox #auto_login {}
+main form .login_checkbox #auto_login_txt {}
+main form .login_checkbox #id_save {}
+main form .login_checkbox #id_save_txt {}
+main form p {}
+main form .login_btn {}
+main form .sign_up_btn {}
+main .search {}
+main .search a {}
+main .search a:first-child {}
+main .search a:last-child {}
+main #sns_sign_up {}
+main #sns_sign_up em {}
+main #sns_sign_up .kakao {}
+main #sns_sign_up .kakao img {}
+main #sns_sign_up .kakao span {}
+main #sns_sign_up .google {}
+main #sns_sign_up .google img {}
+main #sns_sign_up .google span {}
+main #sns_sign_up .apple {}
+main #sns_sign_up .apple img {}
+main #sns_sign_up .apple span {}

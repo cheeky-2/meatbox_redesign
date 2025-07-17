@@ -1,10 +1,10 @@
-const allMenu = document.querySelector('.gnb > li:nth-child(1)');
+/* const allMenu = document.querySelector('.gnb > li:nth-child(1)');
 const lnb1 = document.querySelector('.lnb1');
 const dangdang = document.querySelector('.gnb > li:nth-child(2)');
 const lnb2 = document.querySelector('.lnb2');
 const mAllMenu = document.querySelector('.m_icon button');
 const mLnb1 = document.querySelector('.m_all_menu .lnb1');
-const searchInput = document.querySelector('.search input');
+const searchInput = document.querySelector('.search input'); */
 const popupCloseBtn = document.querySelector('.popup button');
 const popup = document.querySelector('.popup');
 const DmainBn = document.querySelector('.d_main_bn');
@@ -15,12 +15,12 @@ const businessUser = document.querySelector('.business_user');
 const individualUser = document.querySelector('.individual_user');
 const bestProductTheme = document.querySelectorAll('.best_product_title button');
 const userBestProduct1Title = document.querySelectorAll('.user_best_product_wrap button');
-const topMoveNo = document.querySelectorAll('a');
-const headerTop = document.querySelector('.header_top')
-lnb1.style.display = 'none';
+/* const topMoveNo = document.querySelectorAll('a');
+const headerTop = document.querySelector('.header_top') */
+/* lnb1.style.display = 'none';
 lnb2.style.display = 'none';
-mLnb1.style.display = 'none';
-allMenu.addEventListener('click',()=>{
+mLnb1.style.display = 'none'; */
+/* allMenu.addEventListener('click',()=>{
     if(lnb1.style.display == 'none'){
         lnb1.style.display = 'flex';
     }else{lnb1.style.display = 'none';}
@@ -35,7 +35,7 @@ mAllMenu.addEventListener('click',()=>{
     if(mLnb1.style.display == 'none'){
         mLnb1.style.display = 'flex';
     }else{mLnb1.style.display = 'none';}
-})
+}) */
 popupCloseBtn.addEventListener('click',()=>{
     popup.style.display = 'none';
 })
@@ -207,8 +207,8 @@ for(let i = 0; i < 3; i++){
         userBestProduct1Title[i].style.fontWeight = '600';
     })
 }
-for(let i of topMoveNo){
+/* for(let i of topMoveNo){
     i.addEventListener('click',function(e){
         e.preventDefault();
     })
-}
+} */
