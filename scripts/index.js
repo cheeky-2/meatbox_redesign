@@ -38,9 +38,7 @@ for(let i of topMoveNo){
 searchWrap.style.borderColor = '#111'
 searchInput.addEventListener('focus',()=>{
     searchWrap.style.borderColor = '#f00';
-    console.log(0)
 })
 searchInput.addEventListener('blur',()=>{
     searchWrap.style.borderColor = '#111';
-    console.log(1)
 })

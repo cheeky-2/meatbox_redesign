@@ -1,29 +1,40 @@
-main {}
-main h1 {}
-main form {}
-main form .write {}
-main form .write #user_id {}
-main form .write #user_pw {}
-main form .login_checkbox {}
+main {width:402px; margin:0 auto; margin-top:100px; text-align:center;}
+main h1 {font-size:1.25rem; font-weight:500;}
+main form {display:flex; flex-flow:column nowrap;}
+main form .write {margin:30px auto 20px;}
+main form .write #user_id {border:1px solid #bbb; margin:10px 0; padding:12px 20px; width:300px;}
+main form .write #user_id::placeholder {font-size:0.875rem;}
+main form .write #user_pw {border:1px solid #bbb; padding:12px 20px; width:300px;}
+main form .write #user_pw::placeholder {font-size:0.875rem;}
+main form .login_checkbox {text-align:left; padding-left:52px; margin-bottom:40px;}
+main form .login_checkbox input {display:none;}
+main form .login_checkbox label {font-size:0.875rem;}
+main form .login_checkbox label::after {
+    content:''; width:10px; height:10px; background:url();
+}
 main form .login_checkbox #auto_login {}
-main form .login_checkbox #auto_login_txt {}
+main form .login_checkbox #auto_login_txt {margin-right:15px;}
 main form .login_checkbox #id_save {}
 main form .login_checkbox #id_save_txt {}
-main form p {}
-main form .login_btn {}
-main form .sign_up_btn {}
-main .search {}
-main .search a {}
-main .search a:first-child {}
+main form p {width:300px; margin:0 auto; text-align:left; font-size:0.875rem; font-weight:500; padding:10px; background-color:#eee; border-radius:10px;}
+main form .login_btn {background-color:#DB3B3B; padding:13px 0; width:300px; margin:40px auto 10px; font-size:1.063rem; font-weight:600; color:#fff; border-radius:7px;}
+main form .sign_up_btn {width:300px; margin:0 auto; border:1px solid #111; padding:13px 0; font-size:1.063rem; font-weight:600; border-radius:7px;}
+main .search {margin:20px 0 60px;}
+main .search a {font-size:0.875rem;}
+main .search a:first-child {margin-right:20px;}
 main .search a:last-child {}
-main #sns_sign_up {}
-main #sns_sign_up em {}
-main #sns_sign_up .kakao {}
-main #sns_sign_up .kakao img {}
-main #sns_sign_up .kakao span {}
-main #sns_sign_up .google {}
-main #sns_sign_up .google img {}
-main #sns_sign_up .google span {}
-main #sns_sign_up .apple {}
-main #sns_sign_up .apple img {}
-main #sns_sign_up .apple span {}
+main #sns_sign_up  {display:flex; flex-flow:column nowrap;}
+main #sns_sign_up em {font-weight:500;}
+main #sns_sign_up .sns_wrap {display:flex; flex-flow:row nowrap; justify-content:space-around; width:300px; margin:50px auto 85px;}
+main #sns_sign_up .sns_wrap a {display:flex; flex-flow:column nowrap; align-items:center;}
+main #sns_sign_up .sns_wrap a img {width:36px; margin-bottom:10px;}
+main #sns_sign_up .sns_wrap a span {width:max-content; font-size:0.875rem;}
+main #sns_sign_up .sns_wrap .kakao {}
+main #sns_sign_up .sns_wrap .kakao img {}
+main #sns_sign_up .sns_wrap .kakao span {}
+main #sns_sign_up .sns_wrap .google {}
+main #sns_sign_up .sns_wrap .google img {}
+main #sns_sign_up .sns_wrap .google span {}
+main #sns_sign_up .sns_wrap .apple {}
+main #sns_sign_up .sns_wrap .apple img {}
+main #sns_sign_up .sns_wrap .apple span {}
