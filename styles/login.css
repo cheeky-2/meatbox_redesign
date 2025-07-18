@@ -8,9 +8,10 @@ main form .write #user_pw {border:1px solid #bbb; padding:12px 20px; width:300px
 main form .write #user_pw::placeholder {font-size:0.875rem;}
 main form .login_checkbox {text-align:left; padding-left:52px; margin-bottom:40px;}
 main form .login_checkbox input {display:none;}
-main form .login_checkbox label {font-size:0.875rem;}
+main form .login_checkbox label {font-size:0.875rem; padding-left:20px;}
 main form .login_checkbox label::after {
-    content:''; width:10px; height:10px; background:url();
+    content:''; display:inline-block; width:10px; height:10px; background:url(../images/icon/uncheck_icon.png) no-repeat center / cover; transform:translateX(-80px);
+    border:1px solid #ddd;
 }
 main form .login_checkbox #auto_login {}
 main form .login_checkbox #auto_login_txt {margin-right:15px;}
