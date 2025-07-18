@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인 | 미트박스</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/login.css">
@@ -90,7 +91,7 @@
                     </ul>
                 </nav>
                 <div class="search">
-                    <input type="text" placeholder="소분 상품으로 부담은 줄이고 무료배송까지!">
+                    <input type="text" name="search_value" id="search_value" placeholder="소분 상품으로 부담은 줄이고 무료배송까지!">
                     <button type="button" class="search_btn">
                         <img src="./images/icon/search.png" alt="검색하기">
                     </button>
@@ -132,7 +133,7 @@
                 <input type="checkbox" name="auto_save" id="auto_login" value="auto_login"><label for="auto_login" id="auto_login_txt">자동 로그인</label>
                 <input type="checkbox" name="auto_save" id="id_save" value="id_save"><label for="id_save" id="id_save_txt">아이디 저장</label>
             </div>
-            <p>개인정보 보호를 위해 개인 컴퓨터에서만 체크하시길 권장드립니다.</p>
+            <p>* 개인정보 보호를 위해 개인 컴퓨터에서만 체크하시길 권장드립니다.</p>
             <button type="button" class="login_btn">로그인</button>
             <button type="button" class="sign_up_btn">회원가입</button>
         </form>

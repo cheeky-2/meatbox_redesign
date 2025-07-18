@@ -1,41 +1,62 @@
-/* const allMenu = document.querySelector('.gnb > li:nth-child(1)');
-const lnb1 = document.querySelector('.lnb1');
-const dangdang = document.querySelector('.gnb > li:nth-child(2)');
-const lnb2 = document.querySelector('.lnb2');
-const mAllMenu = document.querySelector('.m_icon button');
-const mLnb1 = document.querySelector('.m_all_menu .lnb1');
-const searchInput = document.querySelector('.search input'); */
 const popupCloseBtn = document.querySelector('.popup button');
 const popup = document.querySelector('.popup');
 const DmainBn = document.querySelector('.d_main_bn');
-const bnNextBtn = document.querySelector('.main_bn_btn .next_btn');
-const bnBackBtn = document.querySelector('.main_bn_btn .back_btn');
 const categoryLi = document.querySelectorAll('.category_container li');
 const businessUser = document.querySelector('.business_user');
 const individualUser = document.querySelector('.individual_user');
 const bestProductTheme = document.querySelectorAll('.best_product_title button');
 const userBestProduct1Title = document.querySelectorAll('.user_best_product_wrap button');
-/* const topMoveNo = document.querySelectorAll('a');
-const headerTop = document.querySelector('.header_top') */
-/* lnb1.style.display = 'none';
-lnb2.style.display = 'none';
-mLnb1.style.display = 'none'; */
-/* allMenu.addEventListener('click',()=>{
-    if(lnb1.style.display == 'none'){
-        lnb1.style.display = 'flex';
-    }else{lnb1.style.display = 'none';}
+const bestProducts = document.querySelectorAll('.best_product_list li');
+bestProducts.forEach((obj,idx)=>{
+    console.log(obj.children[0].children[1].children[1].textContent);
+    console.log('-----------------')
+    console.log(bestProducts[idx].children[0].children[1].children[1].textContent);
+    //console.log(porkMeat[idx].storage)
 })
-dangdang.addEventListener('mouseover',()=>{
-    lnb2.style.display = 'flex';
+const porkMeat = [{
+    storage:'냉장',
+    from:'한돈',
+    kind:'원물',
+    title:'사태 - 국산',
+    weight:'kg당',
+    price:7800,
+    shipping:'무료배송',
+    quantity:14,
+},{
+    storage:'냉장',
+    from:'한돈',
+    kind:'원물',
+    title:'후지 - 국산',
+    weight:'kg당',
+    price:6000,
+    shipping:'무료배송',
+    quantity:33,
+},{
+    storage:'냉장',
+    from:'한돈',
+    kind:'원물',
+    title:'미박후지 - 국산',
+    weight:'kg당',
+    price:5200,
+    shipping:'무료배송',
+    quantity:75,
+},{
+    storage:'냉장',
+    from:'한돈',
+    kind:'원물',
+    title:'미박삼겹살(암퇘지) - 국산',
+    weight:'kg당',
+    price:19800,
+    shipping:'무료배송',
+    quantity:19,
+}]
+bestProducts.forEach((obj,idx)=>{
+    console.log(obj.children[0].children[1].children[1].textContent);
+    console.log('-----------------')
+    console.log(bestProducts[idx].children[0].children[1].children[1].textContent);
+    console.log(idx)
+    console.log(porkMeat[idx].storage)
 })
-dangdang.addEventListener('mouseout',()=>{
-    lnb2.style.display = 'none';
-})
-mAllMenu.addEventListener('click',()=>{
-    if(mLnb1.style.display == 'none'){
-        mLnb1.style.display = 'flex';
-    }else{mLnb1.style.display = 'none';}
-}) */
 popupCloseBtn.addEventListener('click',()=>{
     popup.style.display = 'none';
 })
@@ -75,21 +96,6 @@ function cotegortSwiper(){
 }
 window.addEventListener('load', cotegortSwiper);
 window.addEventListener('resize', cotegortSwiper);
-/* const category = new Swiper('.category_wrap .swiper',{
-    slidesPerView:6,//모바일
-    breakpoints:{
-        773:{
-            slidesPerView:6,
-        },
-        1281:{
-            slidesPerView:8,
-        },
-    },
-    navigation:{
-        nextEl:'.category_btn_wrap .swiper-button-next',
-        prevEl:'.category_btn_wrap .swiper-button-prev',
-    },
-}) */
 businessUser.addEventListener('click',()=>{
     individualUser.style.fontWeight = '400';
     businessUser.style.fontWeight = '600';
@@ -207,8 +213,3 @@ for(let i = 0; i < 3; i++){
         userBestProduct1Title[i].style.fontWeight = '600';
     })
 }
-/* for(let i of topMoveNo){
-    i.addEventListener('click',function(e){
-        e.preventDefault();
-    })
-} */
