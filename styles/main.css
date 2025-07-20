@@ -48,12 +48,12 @@ main .best_product > p {text-align:right;  padding-top:18px;}
 main .best_product > p > a {font-size:0.75rem; font-weight:500;}
 main .best_product > p > a img {margin-left:3px;}
 main .best_product .best_product_list {display:flex; flex-flow:row nowrap; margin-top:8px; justify-content:center;}
-main .best_product .best_product_list > li {border:1px solid #bbb; position:relative; margin-right:30px;}
+main .best_product .best_product_list > li {border:1px solid #bbb; position:relative; margin-right:30px; display:block;}
 main .best_product .best_product_list > li:last-child {margin-right:0;}
 main .best_product .best_product_list > li > a {}
 main .best_product .best_product_list > li > a > p {font-size:0.875rem; font-weight:600;}
-main .best_product .best_product_list > li > a > p:nth-of-type(1) {}
-main .best_product .best_product_list > li > a > p:nth-of-type(1) img {}
+main .best_product .best_product_list > li > a > p:nth-of-type(1) {/* width:270px; */}
+main .best_product .best_product_list > li > a > p:nth-of-type(1) img {/* width:100%; */}
 main .best_product .best_product_list > li > a > p:nth-of-type(2) {padding:0 12px; margin-bottom:55px;}
 main .best_product .best_product_list > li > a .product_state {padding:10px 12px 6px; display:flex; align-items:center;}
 main .best_product .best_product_list > li > a .product_state > img {height:8px; margin:4px;}
@@ -171,7 +171,8 @@ main .meatbox_more_wrap .product_more_container > li > .shopping_cart img {}
     main .best_product .best_product_bg img {height:400px;}
     main .best_product .best_product_list {justify-content:space-between;}
     main .best_product .best_product_list > li {margin:0;}
-    main .best_product .best_product_list > li > a > p > img {width:260px;}
+    main .best_product .best_product_list > li > a > p:nth-of-type(1) {width:260px;}
+    main .best_product .best_product_list > li > a > p > img {width:100%;}
     main .best_product .best_product_list > li .shopping_cart {top:227px; right:3px;}
     main .user_best_product { width:1120px; margin:80px auto 0;}
     main .user_best_product > h2 {font-size:1.5rem;}
@@ -226,17 +227,19 @@ main .meatbox_more_wrap .product_more_container > li > .shopping_cart img {}
     main .best_product .best_product_bg {height:157px; position:relative;}
     main .best_product .best_product_bg img {display:none;}
     main .best_product .best_product_bg .best_product_title { position:absolute; top:115px; display:flex; padding:0 4px; left:50%; transform:translateX(-50%); align-items:center;}
-    main .best_product .best_product_bg .best_product_title button {font-size:0.625rem; padding:8px 10px; margin-right:20px; display:block; width:55px;}
+    main .best_product .best_product_bg .best_product_title button {font-size:0.625rem; padding:8px 10px; margin-right:20px; display:block; width:max-content;}
     main .best_product > p {margin:10px 0; padding-right:26px; width:100%;}
     main .best_product > p > a {font-size:0.625rem;}
     main .best_product .best_product_list > li {margin-right:26px;}
     main .best_product .best_product_list > li .shopping_cart {display:none;}
+    main .best_product .best_product_list > li > a {width:160px; display:inline-block;}
+    main .best_product .best_product_list > li > a > p:nth-of-type(1) {width:160px;}
     main .best_product .best_product_list > li > a > p:nth-of-type(1) img {width:160px;}
     main .best_product .best_product_list {width:350px; overflow:hidden;}
     main .best_product .best_product_list > li > a > p:nth-of-type(2) {font-size:0.875rem; margin-bottom:30px;;}
-    main .best_product .best_product_list > li > a .product_state {padding:14px 12px 6px; display:flex; align-items:center;}
+    main .best_product .best_product_list > li > a .product_state {padding:14px 0 6px 12px; display:flex; align-items:center;}
     main .best_product .best_product_list > li > a .product_price {padding:0 12px; margin-bottom:14px;}
-    main .best_product .best_product_list > li > a .product_sub_information {margin:0 12px 0;}
+    main .best_product .best_product_list > li > a .product_sub_information {margin:0 12px 10px;}
     main .user_best_product { width:402px; margin:80px auto 0;}
     main .user_best_product > h2 {font-size:1.25rem; text-align:center;}
     main .user_best_product > .user_best_product_wrap {width:max-content; margin:0 auto; margin-bottom:35px;}
