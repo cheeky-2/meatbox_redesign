@@ -295,9 +295,8 @@ function BestProductReaction(){
     const reaction = window.innerWidth;
     if(reaction >= 1280){
         bestProductTheme.forEach((obj,idx)=>{
-            function productChange(){
+            function productChange1(){
                 {bestProducts.forEach((obje,ind)=>{
-                    obje.children[0].children[0].children[0].style.width = '270px';
                     obje.children[0].children[0].children[0].src = userProdectChange[idx][ind].src;
                     obje.children[0].children[1].children[1].textContent = userProdectChange[idx][ind].storage;
                     obje.children[0].children[1].children[3].textContent = userProdectChange[idx][ind].from;
@@ -315,18 +314,22 @@ function BestProductReaction(){
                         bestProducts[3].style.display = 'none';
                         obje.children[0].children[1].children[0].src = './images/icon/ice_icon.png';
                         bestProducts[0].parentNode.style.justifyContent = 'start';
-                        bestProducts[0].parentNode.style.paddingLeft = '51px';
+                        bestProducts[0].parentNode.style.paddingLeft = '36px';
+                        bestProducts[0].style.marginRight = '30px';
                     }else if(obj.textContent == '양고기'){
                         obje.children[0].children[1].children[0].src = './images/icon/ice_icon.png';
                         obje.style.display = 'block';
+                        bestProducts[0].parentNode.style.justifyContent = 'center';
                     }else{
                         obje.style.display = 'block';
                         obje.children[0].children[1].children[0].src = './images/icon/water_icon.png';
                         bestProducts[0].parentNode.style.justifyContent = 'center';
                         bestProducts[0].parentNode.style.paddingLeft = '0px';
+                        bestProducts[ind].style.marginRight = '30px';
                     }
                 })}
             }
+            bestProducts[idx].children[0].children[0].children[0].style.width = '270px';
             obj.addEventListener('click',()=>{
                 for(let i of bestProductTheme){
                     i.style.backgroundColor = '#fff'
@@ -335,15 +338,14 @@ function BestProductReaction(){
                 if(obj.style.backgroundColor = '#fff'){
                     obj.style.backgroundColor = '#DC2525';
                     obj.style.color = '#fff';
-                    productChange();
+                    productChange1();
                 }
             })
         })
     }else if(reaction >= 773){
         bestProductTheme.forEach((obj,idx)=>{
-            function productChange(){
+            function productChange2(){
                 {bestProducts.forEach((obje,ind)=>{
-                    obje.children[0].children[0].children[0].style.width = '260px';
                     obje.children[0].children[0].children[0].src = userProdectChange[idx][ind].src;
                     obje.children[0].children[1].children[1].textContent = userProdectChange[idx][ind].storage;
                     obje.children[0].children[1].children[3].textContent = userProdectChange[idx][ind].from;
@@ -373,10 +375,11 @@ function BestProductReaction(){
                         obje.children[0].children[1].children[0].src = './images/icon/water_icon.png';
                         bestProducts[0].parentNode.style.justifyContent = 'space-between';
                         bestProducts[0].parentNode.style.paddingLeft = '0px';
-                        bestProducts[0].style.marginRight = '0px';
+                        bestProducts[ind].style.marginRight = '0px';
                     }
                 })}
             }
+            bestProducts[idx].children[0].children[0].children[0].style.width = '260px';
             obj.addEventListener('click',()=>{
                 for(let i of bestProductTheme){
                     i.style.backgroundColor = '#fff'
@@ -385,15 +388,14 @@ function BestProductReaction(){
                 if(obj.style.backgroundColor = '#fff'){
                     obj.style.backgroundColor = '#DC2525';
                     obj.style.color = '#fff';
-                    productChange();
+                    productChange2();
                 }
             })
         })
     }else{
         bestProductTheme.forEach((obj,idx)=>{
-            function productChange(){
+            function productChange3(){
                 {bestProducts.forEach((obje,ind)=>{
-                    obje.children[0].children[0].children[0].style.width = '160px';
                     obje.children[0].children[0].children[0].src = userProdectChange[idx][ind].src;
                     obje.children[0].children[1].children[1].textContent = userProdectChange[idx][ind].storage;
                     obje.children[0].children[1].children[3].textContent = userProdectChange[idx][ind].from;
@@ -431,6 +433,7 @@ function BestProductReaction(){
                     }
                 })}
             }
+            bestProducts[idx].children[0].children[0].children[0].style.width = '160px';
             obj.addEventListener('click',()=>{
                 for(let i of bestProductTheme){
                     i.style.backgroundColor = '#fff'
@@ -439,7 +442,7 @@ function BestProductReaction(){
                 if(obj.style.backgroundColor = '#fff'){
                     obj.style.backgroundColor = '#DC2525';
                     obj.style.color = '#fff';
-                    productChange();
+                    productChange3();
                 }
             })
         })

@@ -52,8 +52,8 @@ main .best_product .best_product_list > li {border:1px solid #bbb; position:rela
 main .best_product .best_product_list > li:last-child {margin-right:0;}
 main .best_product .best_product_list > li > a {}
 main .best_product .best_product_list > li > a > p {font-size:0.875rem; font-weight:600;}
-main .best_product .best_product_list > li > a > p:nth-of-type(1) {/* width:270px; */}
-main .best_product .best_product_list > li > a > p:nth-of-type(1) img {/* width:100%; */}
+main .best_product .best_product_list > li > a > p:nth-of-type(1) {width:270px;}
+main .best_product .best_product_list > li > a > p:nth-of-type(1) img {width:100%;}
 main .best_product .best_product_list > li > a > p:nth-of-type(2) {padding:0 12px; margin-bottom:55px;}
 main .best_product .best_product_list > li > a .product_state {padding:10px 12px 6px; display:flex; align-items:center;}
 main .best_product .best_product_list > li > a .product_state > img {height:8px; margin:4px;}
