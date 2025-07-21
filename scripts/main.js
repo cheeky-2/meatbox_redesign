@@ -326,10 +326,17 @@ function BestProductReaction(){
                         bestProducts[0].parentNode.style.justifyContent = 'center';
                         bestProducts[0].parentNode.style.paddingLeft = '0px';
                         bestProducts[ind].style.marginRight = '30px';
+                        bestProducts[3].style.marginRight = '0px';
                     }
                 })}
             }
-            bestProducts[idx].children[0].children[0].children[0].style.width = '270px';
+            for(let i = 0; i<4; i++){
+                bestProducts[i].children[0].children[0].children[0].style.width = '270px';
+                bestProducts[i].style.display = 'block';
+                bestProducts[i].style.marginRight = '30px';
+                bestProducts[3].style.marginRight = '0px';
+                bestProducts[0].parentNode.style.justifyContent = 'center';
+            }
             obj.addEventListener('click',()=>{
                 for(let i of bestProductTheme){
                     i.style.backgroundColor = '#fff'
@@ -379,7 +386,13 @@ function BestProductReaction(){
                     }
                 })}
             }
-            bestProducts[idx].children[0].children[0].children[0].style.width = '260px';
+            for(let i = 0; i<4; i++){
+                bestProducts[i].children[0].children[0].children[0].style.width = '260px';
+                bestProducts[i].style.marginRight = '0px';
+                bestProducts[i].parentNode.style.paddingLeft = '0px';
+                bestProducts[i].parentNode.style.justifyContent = 'space-between';
+                bestProducts[i].style.display = 'block';
+            }
             obj.addEventListener('click',()=>{
                 for(let i of bestProductTheme){
                     i.style.backgroundColor = '#fff'
@@ -433,7 +446,13 @@ function BestProductReaction(){
                     }
                 })}
             }
-            bestProducts[idx].children[0].children[0].children[0].style.width = '160px';
+            for(let i = 0; i<4; i++){
+                bestProducts[i].children[0].children[0].children[0].style.width = '160px';
+                bestProducts[2].style.display = 'none';
+                bestProducts[3].style.display = 'none';
+                bestProducts[i].parentNode.style.paddingLeft = '0px';
+                bestProducts[i].style.marginRight = '0px';
+            }
             obj.addEventListener('click',()=>{
                 for(let i of bestProductTheme){
                     i.style.backgroundColor = '#fff'
