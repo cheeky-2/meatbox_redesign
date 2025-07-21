@@ -2,17 +2,9 @@ const popupCloseBtn = document.querySelector('.popup button');
 const popup = document.querySelector('.popup');
 const DmainBn = document.querySelector('.d_main_bn');
 const categoryLi = document.querySelectorAll('.category_container li');
-const businessUser = document.querySelector('.business_user');
-const individualUser = document.querySelector('.individual_user');
 const bestProductTheme = document.querySelectorAll('.best_product_title button');
 const userBestProduct1Title = document.querySelectorAll('.user_best_product_wrap button');
 const bestProducts = document.querySelectorAll('.best_product_list li');
-/* bestProducts.forEach((obj,idx)=>{
-    console.log(obj.children[0].children[1].children[1].textContent);
-    console.log('-----------------')
-    console.log(bestProducts[idx].children[0].children[1].children[1].textContent);
-    //console.log(porkMeat[idx].storage)
-}) */
 const cowMeat = [{
     src:'./images/product/sirloinmeat.png',
     storage:'냉장',
@@ -299,14 +291,6 @@ function cotegortSwiper(){
 }
 window.addEventListener('load', cotegortSwiper);
 window.addEventListener('resize', cotegortSwiper);
-businessUser.addEventListener('click',()=>{
-    individualUser.style.fontWeight = '400';
-    businessUser.style.fontWeight = '600';
-})
-individualUser.addEventListener('click',()=>{
-    individualUser.style.fontWeight = '600';
-    businessUser.style.fontWeight = '400';
-})
 function BestProductReaction(){
     const reaction = window.innerWidth;
     if(reaction >= 1280){
@@ -326,7 +310,7 @@ function BestProductReaction(){
                     if(obj.textContent == '말고기'){
                         obje.style.display = 'none';
                     }else if(obj.textContent == '오리고기'){
-                        bestProducts[ind].style.display = 'block';
+                        obje.style.display = 'block';
                         bestProducts[2].style.display = 'none';
                         bestProducts[3].style.display = 'none';
                         obje.children[0].children[1].children[0].src = './images/icon/ice_icon.png';
@@ -334,9 +318,9 @@ function BestProductReaction(){
                         bestProducts[0].parentNode.style.paddingLeft = '51px';
                     }else if(obj.textContent == '양고기'){
                         obje.children[0].children[1].children[0].src = './images/icon/ice_icon.png';
-                        bestProducts[ind].style.display = 'block';
+                        obje.style.display = 'block';
                     }else{
-                        bestProducts[ind].style.display = 'block';
+                        obje.style.display = 'block';
                         obje.children[0].children[1].children[0].src = './images/icon/water_icon.png';
                         bestProducts[0].parentNode.style.justifyContent = 'center';
                         bestProducts[0].parentNode.style.paddingLeft = '0px';

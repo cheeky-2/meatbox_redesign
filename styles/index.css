@@ -27,7 +27,7 @@ header .header_bottom > nav .gnb li:nth-child(2) > a > em {font-size:0.938rem; f
 header .header_bottom > nav .gnb li:nth-child(2) > a > img{}
 header .header_bottom > nav .gnb li > a {font-size:0.938rem; font-weight:600;}
 header .header_bottom > nav .gnb li > a img {}
-header .header_bottom > nav .gnb li .lnb1 {display:flex; flex-flow:column nowrap; position:absolute; top:43px; left:0; background-color:#fff; z-index:800; width:162px; padding:20px; border:1px solid #bbb; transform:translateY(-5px) scaleY(0); transition:all 0.2s linear; opacity:0; transform-origin:top;}
+header .header_bottom > nav .gnb li .lnb1 {display:flex; flex-flow:column nowrap; position:absolute; top:43px; left:0; background-color:#fff; z-index:800; width:162px; padding:20px; border:1px solid #bbb; transform:translateY(-5px) scaleY(0); transition:all 0.1s linear; opacity:0; transform-origin:top;}
 header .header_bottom > nav .gnb li .lnb1 a {margin-bottom:20px; font-size:0.938rem; font-weight:500;}
 header .header_bottom > nav .gnb li .lnb1 a:last-child {margin-bottom:0;}
 header .header_bottom > nav .gnb li .lnb2 {display:flex; flex-flow:column nowrap; width:126px; padding:10px; position:absolute; top:33px; left:-26px; z-index:800; background-color:#fff; border:1px solid #bbb; transition:all 0.2s linear; opacity:0;}

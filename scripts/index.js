@@ -9,6 +9,8 @@ const searchWrap = document.querySelector('.search');
 const searchBtn = document.querySelector('.search .search_btn');
 const headerTop = document.querySelector('.header_top');
 const topMoveNo = document.querySelectorAll('a');
+const businessUser = document.querySelector('.business_user');
+const individualUser = document.querySelector('.individual_user');
 /* lnb2.style.display = 'none'; */
 mLnb1.style.display = 'none';
 allMenu.addEventListener('click',()=>{
@@ -43,11 +45,23 @@ for(let i of topMoveNo){
     })
 }
 searchInput.addEventListener('focus',()=>{
-    searchWrap.style.borderColor = '#f00';
+    searchWrap.style.borderColor = '#DC2525';
+    searchBtn.children[0].src = './images/icon/search_change.png';
 })
 searchInput.addEventListener('blur',()=>{
     searchWrap.style.borderColor = '#111';
+    searchBtn.children[0].src = './images/icon/search.png';
 })
 searchBtn.addEventListener('click',()=>{
     console.log(`검색 내용 : ${searchInput.value}`);
+})
+businessUser.addEventListener('click',()=>{
+    individualUser.style.fontWeight = '400';
+    businessUser.style.fontWeight = '600';
+    console.log(businessUser.textContent);
+})
+individualUser.addEventListener('click',()=>{
+    individualUser.style.fontWeight = '600';
+    businessUser.style.fontWeight = '400';
+    console.log(individualUser.textContent);
 })
