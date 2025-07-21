@@ -37,7 +37,7 @@ header .header_bottom > nav .gnb li .lnb2 a img {margin-right:7px;}
 header .header_bottom > nav .gnb li .lnb2 a span {font-size:0.938rem; font-weight:700;}
 header .header_bottom .search {display:flex; align-items:center; border:1px solid #111; padding-right:6px; width:330px;}
 header .header_bottom .search #search_value {width:100%; padding-left:20px; /* font-size:0.625rem; */}
-header .header_bottom .search #search_value::placeholder {font-size:0.625rem; position:relative; top:-2px; left:0;}
+header .header_bottom .search #search_value::placeholder {font-size:0.75rem; position:relative; top:-2px; left:0;}
 header .header_bottom .search button {}
 header .header_bottom .search .search_btn img {width:24px;}
 header .m_icon {display:none;}

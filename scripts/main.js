@@ -314,7 +314,7 @@ function BestProductReaction(){
                         bestProducts[3].style.display = 'none';
                         obje.children[0].children[1].children[0].src = './images/icon/ice_icon.png';
                         bestProducts[0].parentNode.style.justifyContent = 'start';
-                        bestProducts[0].parentNode.style.paddingLeft = '36px';
+                        bestProducts[0].parentNode.style.paddingLeft = '51px';
                         bestProducts[0].style.marginRight = '30px';
                     }else if(obj.textContent == '양고기'){
                         obje.children[0].children[1].children[0].src = './images/icon/ice_icon.png';
@@ -337,6 +337,7 @@ function BestProductReaction(){
                 bestProducts[3].style.marginRight = '0px';
                 bestProducts[0].parentNode.style.justifyContent = 'center';
             }
+            console.log(obj.textContent)
             obj.addEventListener('click',()=>{
                 for(let i of bestProductTheme){
                     i.style.backgroundColor = '#fff'
@@ -452,6 +453,10 @@ function BestProductReaction(){
                 bestProducts[3].style.display = 'none';
                 bestProducts[i].parentNode.style.paddingLeft = '0px';
                 bestProducts[i].style.marginRight = '0px';
+                if(obj.textContent == '오리고기'){
+                    bestProducts[2].style.display = 'none';
+                    bestProducts[3].style.display = 'none';
+                }
             }
             obj.addEventListener('click',()=>{
                 for(let i of bestProductTheme){
